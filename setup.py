@@ -3,7 +3,7 @@ import sys
 from distutils.core import setup
 
 setup(
-    name='stormssh',
+    name='ssh-storm',
     version='0.3.5',
     packages=['storm'],
     url='http://github.com/emre/storm',
@@ -12,7 +12,7 @@ setup(
     author_email='mail@emreyilmaz.me',
     description='Management commands to ssh config files.',
     scripts=[
-        'storm/bin/storm'
+        'storm/bin/ssh-storm'
     ],
     install_requires=list(filter(None, [
         "paramiko",
