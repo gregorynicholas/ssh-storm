@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Storm by emre</title>
+    <title>ssh-storm</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -16,8 +16,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Storm</h1>
-        <p class="header">Manage your SSH like a boss.</p>
+        <h1 class="header">ssh-storm</h1>
+        <p class="header">manage your ssh like a boss.</p>
 
         <ul>
           <li class="download"><a class="buttons" href="https://github.com/emre/storm/zipball/master">Download ZIP</a></li>
@@ -33,22 +33,22 @@
         <h1>
 <a name="storm" class="anchor" href="#storm"><span class="octicon octicon-link"></span></a>storm</h1>
 
-<p>storm is a command line tool to manage your ssh connections.</p>
+<p>ssh-storm is a command line tool to manage your ssh connections.</p>
 
 <p><img src="https://raw.github.com/emre/storm/master/ss.png"></p>
 
 <h2>
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>installation</h2>
 
-<pre><code>$ [sudo] pip install stormssh
+<pre><code>$ [sudo] pip install ssh-storm
 </code></pre>
 
 <p>or if you like 90s:</p>
 
-<pre><code>$ [sudo] easy_install stormssh
+<pre><code>$ [sudo] easy_install ssh-storm
 </code></pre>
 
-<p>or download add storm directory to the your <code>$PATH</code>. E.g.</p>
+<p>or download add ssh-storm directory to the your <code>$PATH</code>. E.g.</p>
 
 <pre><code>$ git clone git://github.com/emre/storm.git
 $ export PATH=$PATH:`pwd`/storm/storm/bin/; storm
@@ -62,47 +62,47 @@ $ export PATH=$PATH:`pwd`/storm/storm/bin/; storm
 <h3>
 <a name="adding-hosts" class="anchor" href="#adding-hosts"><span class="octicon octicon-link"></span></a>adding hosts</h3>
 
-<pre><code>$ storm add [-h]  [--id_file ID_FILE] name connection_uri
+<pre><code>$ ssh-storm add [-h]  [--id_file ID_FILE] name connection_uri
 </code></pre>
 
 <p>Where <code>-h</code>, <code>id_file</code> are optional arguments.</p>
 
 <p>example:</p>
 
-<pre><code>$ storm add my_vps root@emreyilmaz.me:22
+<pre><code>$ ssh-storm add my_vps root@emreyilmaz.me:22
 my_vps added to your ssh config. you can connect it by typing "ssh my_vps".
 </code></pre>
 
 <h3>
 <a name="modifying-hosts" class="anchor" href="#modifying-hosts"><span class="octicon octicon-link"></span></a>modifying hosts</h3>
 
-<pre><code>storm edit [-h] [--id_file ID_FILE] name connection_uri
+<pre><code>$ ssh-storm edit [-h] [--id_file ID_FILE] name connection_uri
 </code></pre>
 
 <p>Where <code>-h</code>, <code>id_file</code> are optional arguments.</p>
 
 <p>example:</p>
 
-<pre><code>$ storm edit my_vps emre@emreyilmaz.me:2400
+<pre><code>$ ssh-storm edit my_vps emre@emreyilmaz.me:2400
 "my_vps" updated successfully.
 </code></pre>
 
 <h3>
 <a name="deleting-a-single-host" class="anchor" href="#deleting-a-single-host"><span class="octicon octicon-link"></span></a>deleting a single host</h3>
 
-<pre><code>$ storm delete name
+<pre><code>$ ssh-storm delete name
 </code></pre>
 
 <p>example:</p>
 
-<pre><code>$ storm delete my_vps
+<pre><code>$ ssh-storm delete my_vps
 success hostname "my_vps" deleted successfully.
 </code></pre>
 
 <h3>
 <a name="searching-hosts" class="anchor" href="#searching-hosts"><span class="octicon octicon-link"></span></a>searching hosts</h3>
 
-<pre><code>$ storm search git
+<pre><code>$ ssh-storm search git
 Listing results for git:
   github -&gt; emre@github.com:22
 </code></pre>
@@ -110,7 +110,7 @@ Listing results for git:
 <h3>
 <a name="listing-hosts" class="anchor" href="#listing-hosts"><span class="octicon octicon-link"></span></a>listing hosts</h3>
 
-<pre><code>$ storm list
+<pre><code>$ ssh-storm list
 Listing hosts:
   vps -&gt; 22@emreyilmaz.me:22
   netscaler -&gt; root@127.0.0.1:8081
@@ -119,7 +119,7 @@ Listing hosts:
 <h3>
 <a name="deleting-all-hosts" class="anchor" href="#deleting-all-hosts"><span class="octicon octicon-link"></span></a>deleting all hosts</h3>
 
-<pre><code>$ storm delete_all
+<pre><code>$ ssh-storm delete_all
 all entries deleted.
 </code></pre>
 
@@ -164,6 +164,6 @@ all entries deleted.
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+
   </body>
 </html>
